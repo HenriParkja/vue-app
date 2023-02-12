@@ -11,10 +11,16 @@
 }
 
 .modal__content {
-  min-width: 320px;
+  width: 100%;
   background: $color-white;
   padding: 48px 32px 32px;
+  margin: 0 16px;
   position: relative;
+  overflow-x: hidden;
+
+  @media only screen and (min-width: 768px) {
+    max-width: 320px;
+  }
 }
 
 .modal__textfield {
@@ -37,7 +43,7 @@
     width: 2px;
     background: $color-black;
     position: absolute;
-    top: 0px;
+    top: 0;
     right: 8px;
     transform: rotate(45deg)
   }
@@ -52,4 +58,8 @@
     right: 8px;
     transform: rotate(45deg) translateX(10px)
   }
+}
+
+.modal__submit {
+  margin-top: 16px;
 }

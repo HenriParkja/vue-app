@@ -7,9 +7,22 @@ import InputModal from '../../components/modal/InputModal.vue'
 import './modal-container.scss'
 </script>
 
+<script lang="ts">
+export default {
+  data() {
+    return {
+      isModalOpen: false
+    }
+  }
+}
+</script>
+
 <template>
   <div class="modal-container">
-    <PrimaryButton :text="props.buttonText"></PrimaryButton>
+    <PrimaryButton
+        :text="props.buttonText"
+        @click="isModalOpen=true"
+    ></PrimaryButton>
   </div>
-  <InputModal></InputModal>
+  <InputModal :isModalOpen="isModalOpen" @modal-close="isModalOpen=false"></InputModal>
 </template>

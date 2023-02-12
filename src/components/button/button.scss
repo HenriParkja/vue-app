@@ -12,3 +12,13 @@
     background: $color-light-orange;
   }
 }
+
+.button--text {
+  background: transparent;
+  padding: 0;
+
+  &:hover,
+  &:active {
+    background: transparent;
+  }
+}
