@@ -1,4 +1,4 @@
 export interface ITextField {
-    id: string,
-    label: string
+  id: string;
+  label: string;
 }

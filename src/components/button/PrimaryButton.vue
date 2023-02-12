@@ -3,9 +3,9 @@ const props = defineProps({
   text: String,
   class: String,
   modifier: String,
-})
-import './button.scss'
-const classString = `button ${props.class} ${props.modifier}`
+});
+import "./button.scss";
+const classString = `button ${props.class} ${props.modifier}`;
 </script>
 
 <template>
