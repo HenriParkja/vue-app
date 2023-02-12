@@ -1,10 +1,11 @@
 <script setup lang="ts">
+import "./button.scss";
+
 const props = defineProps({
   text: String,
   class: String,
   modifier: String,
 });
-import "./button.scss";
 const classString = `button ${props.class} ${props.modifier}`;
 </script>
 

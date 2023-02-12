@@ -1,10 +1,11 @@
 <script setup lang="ts">
+import "./text-field.scss";
 interface ITextField {
   id: string;
   label: string;
 }
+
 const props = withDefaults(defineProps<ITextField>(), {});
-import "./text-field.scss";
 </script>
 
 <template>

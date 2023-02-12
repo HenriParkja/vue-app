@@ -1,10 +1,10 @@
 <script setup lang="ts">
+import PrimaryButton from "@/components/button/PrimaryButton.vue";
+import InputModal from "@/components/modal/InputModal.vue";
+import "./modal-container.scss";
 const props = defineProps({
   buttonText: String,
 });
-import PrimaryButton from "../../components/button/PrimaryButton.vue";
-import InputModal from "../../components/modal/InputModal.vue";
-import "./modal-container.scss";
 </script>
 
 <script lang="ts">

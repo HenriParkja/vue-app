@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import "./modal.scss";
-import TextField from "./../text-field/TextField.vue";
+import TextField from "@/components/text-field/TextField.vue";
 import PrimaryButton from "@/components/button/PrimaryButton.vue";
 </script>
 <script lang="ts">
@@ -74,7 +74,7 @@ export default defineComponent({
         />
       </div>
       <div class="modal__submit">
-        <PrimaryButton text="Submit" @click="handleSubmit"> </PrimaryButton>
+        <PrimaryButton text="Submit" @click="handleSubmit"></PrimaryButton>
       </div>
     </div>
   </div>
