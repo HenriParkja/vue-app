@@ -1,0 +1,14 @@
+.text-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-field__label {
+  margin-bottom: 8px;
+}
+
+.text-field__input {
+  border: 1px solid $color-black;
+  padding: 8px;
+  font-size: 16px;
+}

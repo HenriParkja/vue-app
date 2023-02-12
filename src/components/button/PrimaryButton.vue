@@ -1,12 +1,12 @@
-<script lang="ts">
-export default {
-  props: ["text"],
-}
+<script setup lang="ts">
+const props = defineProps({
+  text: String,
+})
 import './button.scss'
 </script>
 
 <template>
   <button class="button">
-    {{ text }}
+    {{ props.text }}
   </button>
 </template>

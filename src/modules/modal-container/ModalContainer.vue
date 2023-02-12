@@ -1,13 +1,15 @@
 <script setup lang="ts">
 const props = defineProps({
   buttonText: String,
-});
-import Button from "../../components/button/Button.vue";
+})
+import PrimaryButton from '../../components/button/PrimaryButton.vue'
+import InputModal from '../../components/modal/InputModal.vue'
 import './modal-container.scss'
 </script>
 
 <template>
   <div class="modal-container">
-    <Button :text="buttonText"></Button>
+    <PrimaryButton :text="props.buttonText"></PrimaryButton>
   </div>
+  <InputModal></InputModal>
 </template>
